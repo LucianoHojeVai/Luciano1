@@ -11,7 +11,7 @@ arquivo = st.file_uploader("Por favor anexe a tabela de produtos")
 if arquivo == None:
     st.text("Por favor suba o arquivo")
 else: 
-    df = pd.read_excel('Produtos_Log\Produtos.xlsx')
+    df = pd.read_excel(arquivo)
 
 # Salvar as Métricas em variáveis 
 
